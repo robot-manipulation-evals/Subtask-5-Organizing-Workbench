@@ -1,0 +1,86 @@
+{
+  "/World/BenchItems/Bottle_01": {
+    "position": [
+      1.923,
+      -0.175,
+      0.043
+    ]
+  },
+  "/World/BenchItems/Bottle_02": {
+    "position": [
+      -0.132,
+      -2.0,
+      0.879
+    ]
+  },
+  "/World/BenchItems/Bottle_03": {
+    "position": [
+      1.923,
+      -0.9855,
+      0.043
+    ]
+  },
+  "/World/BenchItems/Bottle_07": {
+    "position": [
+      1.923,
+      -0.8805,
+      0.043
+    ]
+  },
+  "/World/BenchItems/Bottle_08": {
+    "position": [
+      1.923,
+      -0.7755,
+      0.043
+    ]
+  },
+  "/World/BenchItems/Bottle_12": {
+    "position": [
+      1.923,
+      -0.6705,
+      0.043
+    ]
+  },
+  "/World/BenchItems/Bottle_04": {
+    "position": [
+      1.923,
+      0.7755,
+      0.043
+    ]
+  },
+  "/World/BenchItems/Bottle_09": {
+    "position": [
+      1.923,
+      0.8805,
+      0.043
+    ]
+  },
+  "/World/BenchItems/Bottle_05": {
+    "position": [
+      -0.132,
+      -1.2,
+      0.879
+    ]
+  },
+  "/World/BenchItems/Bottle_06": {
+    "position": [
+      1.923,
+      0.1225,
+      0.043
+    ]
+  },
+  "/World/BenchItems/Bottle_10": {
+    "position": [
+      1.923,
+      0.2275,
+      0.043
+    ]
+  },
+  "/World/BenchItems/Bottle_11": {
+    "position": [
+      -0.132,
+      -1.6,
+      0.879
+    ]
+  }
+}

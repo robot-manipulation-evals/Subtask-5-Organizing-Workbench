@@ -1,0 +1,334 @@
+{
+  "_about": "Task 5 (Organizing the workbench) chemical set. GHS data follows typical supplier SDS classifications (check the SDS for the exact product you buy). storage_group/zone are the ground truth for scoring. Label PNGs are in labels/<id>.png.",
+  "zones": {
+    "flammables_cabinet": "Yellow flammable-liquid safety cabinet",
+    "corrosives_acids": "Corrosives cabinet, ACID section (secondary containment tray)",
+    "corrosives_acids_oxidizing_tray": "Corrosives cabinet, ACID section, separate tray for oxidizing acids (nitric)",
+    "corrosives_bases": "Corrosives cabinet, BASE section (secondary containment tray)",
+    "oxidizers": "Oxidizer shelf / bin, away from flammables and organics",
+    "toxics": "Toxics shelf / lockable bin",
+    "general_shelf": "General chemical shelf (non-hazardous)"
+  },
+  "incompatible_groups": [
+    [
+      "inorganic_acid",
+      "base"
+    ],
+    [
+      "oxidizing_acid",
+      "base"
+    ],
+    [
+      "organic_acid",
+      "base"
+    ],
+    [
+      "oxidizing_acid",
+      "flammable"
+    ],
+    [
+      "oxidizing_acid",
+      "organic_acid"
+    ],
+    [
+      "oxidizer",
+      "flammable"
+    ],
+    [
+      "oxidizer",
+      "organic_acid"
+    ],
+    [
+      "toxic",
+      "inorganic_acid"
+    ],
+    [
+      "toxic",
+      "oxidizing_acid"
+    ]
+  ],
+  "chemicals": [
+    {
+      "id": "sulfuric_acid",
+      "name": "Sulfuric Acid",
+      "formula": "H₂SO₄",
+      "grade": "95–98 %, ACS reagent",
+      "cas": "7664-93-9",
+      "size": "500 mL",
+      "container": "clear glass, PP cap",
+      "signal_word": "Danger",
+      "pictograms": [
+        "GHS05"
+      ],
+      "hazard_statements": [
+        "H290",
+        "H314"
+      ],
+      "storage_group": "inorganic_acid",
+      "zone": "corrosives_acids",
+      "note": "Corrosive but NOT flammable: acid cabinet, not the flammables cabinet.",
+      "catalog_no": "BR-1001"
+    },
+    {
+      "id": "nitric_acid",
+      "name": "Nitric Acid",
+      "formula": "HNO₃",
+      "grade": "70 %, ACS reagent",
+      "cas": "7697-37-2",
+      "size": "500 mL",
+      "container": "amber glass, PTFE-lined cap",
+      "signal_word": "Danger",
+      "pictograms": [
+        "GHS03",
+        "GHS05",
+        "GHS06"
+      ],
+      "hazard_statements": [
+        "H272",
+        "H290",
+        "H314",
+        "H331"
+      ],
+      "storage_group": "oxidizing_acid",
+      "zone": "corrosives_acids_oxidizing_tray",
+      "note": "Oxidizing acid: separate tray from other acids; never near acetic acid or flammables.",
+      "catalog_no": "BR-1002"
+    },
+    {
+      "id": "hydrochloric_acid",
+      "name": "Hydrochloric Acid",
+      "formula": "HCl",
+      "grade": "37 %, ACS reagent",
+      "cas": "7647-01-0",
+      "size": "500 mL",
+      "container": "clear glass, PP cap",
+      "signal_word": "Danger",
+      "pictograms": [
+        "GHS05",
+        "GHS07"
+      ],
+      "hazard_statements": [
+        "H290",
+        "H314",
+        "H335"
+      ],
+      "storage_group": "inorganic_acid",
+      "zone": "corrosives_acids",
+      "catalog_no": "BR-1003"
+    },
+    {
+      "id": "acetic_acid",
+      "name": "Acetic Acid, Glacial",
+      "formula": "CH₃COOH",
+      "grade": "≥ 99.7 %, ACS reagent",
+      "cas": "64-19-7",
+      "size": "500 mL",
+      "container": "clear glass, PP cap",
+      "signal_word": "Danger",
+      "pictograms": [
+        "GHS02",
+        "GHS05"
+      ],
+      "hazard_statements": [
+        "H226",
+        "H314"
+      ],
+      "storage_group": "organic_acid",
+      "zone": "flammables_cabinet",
+      "note": "Trick item: an acid, but organic and flammable. Goes with flammables/organics, never with nitric acid.",
+      "catalog_no": "BR-1004"
+    },
+    {
+      "id": "sodium_hydroxide",
+      "name": "Sodium Hydroxide, Pellets",
+      "formula": "NaOH",
+      "grade": "≥ 97 %, ACS reagent",
+      "cas": "1310-73-2",
+      "size": "500 g",
+      "container": "white HDPE jar, wide mouth",
+      "signal_word": "Danger",
+      "pictograms": [
+        "GHS05"
+      ],
+      "hazard_statements": [
+        "H290",
+        "H314"
+      ],
+      "storage_group": "base",
+      "zone": "corrosives_bases",
+      "catalog_no": "BR-1005"
+    },
+    {
+      "id": "ammonium_hydroxide",
+      "name": "Ammonium Hydroxide",
+      "formula": "NH₄OH",
+      "grade": "28–30 % NH₃ basis",
+      "cas": "1336-21-6",
+      "size": "500 mL",
+      "container": "HDPE bottle",
+      "signal_word": "Danger",
+      "pictograms": [
+        "GHS05",
+        "GHS07",
+        "GHS09"
+      ],
+      "hazard_statements": [
+        "H290",
+        "H314",
+        "H335",
+        "H410"
+      ],
+      "storage_group": "base",
+      "zone": "corrosives_bases",
+      "catalog_no": "BR-1006"
+    },
+    {
+      "id": "ethanol",
+      "name": "Ethanol, Absolute",
+      "formula": "C₂H₅OH",
+      "grade": "≥ 99.5 %, 200 proof",
+      "cas": "64-17-5",
+      "size": "500 mL",
+      "container": "clear glass, PP cap",
+      "signal_word": "Danger",
+      "pictograms": [
+        "GHS02",
+        "GHS07"
+      ],
+      "hazard_statements": [
+        "H225",
+        "H319"
+      ],
+      "storage_group": "flammable",
+      "zone": "flammables_cabinet",
+      "catalog_no": "BR-1007"
+    },
+    {
+      "id": "acetone",
+      "name": "Acetone",
+      "formula": "C₃H₆O",
+      "grade": "≥ 99.5 %, ACS reagent",
+      "cas": "67-64-1",
+      "size": "500 mL",
+      "container": "clear glass, PP cap",
+      "signal_word": "Danger",
+      "pictograms": [
+        "GHS02",
+        "GHS07"
+      ],
+      "hazard_statements": [
+        "H225",
+        "H319",
+        "H336"
+      ],
+      "storage_group": "flammable",
+      "zone": "flammables_cabinet",
+      "catalog_no": "BR-1008"
+    },
+    {
+      "id": "methanol",
+      "name": "Methanol",
+      "formula": "CH₃OH",
+      "grade": "≥ 99.8 %, ACS reagent",
+      "cas": "67-56-1",
+      "size": "500 mL",
+      "container": "clear glass, PP cap",
+      "signal_word": "Danger",
+      "pictograms": [
+        "GHS02",
+        "GHS06",
+        "GHS08"
+      ],
+      "hazard_statements": [
+        "H225",
+        "H301+H311+H331",
+        "H370"
+      ],
+      "storage_group": "flammable",
+      "zone": "flammables_cabinet",
+      "note": "Toxic AND flammable: flammability decides storage (flammables cabinet).",
+      "catalog_no": "BR-1009"
+    },
+    {
+      "id": "hydrogen_peroxide",
+      "name": "Hydrogen Peroxide",
+      "formula": "H₂O₂",
+      "grade": "30 % (w/w) in H₂O",
+      "cas": "7722-84-1",
+      "size": "500 mL",
+      "container": "opaque HDPE bottle, vented cap",
+      "signal_word": "Danger",
+      "pictograms": [
+        "GHS05",
+        "GHS07"
+      ],
+      "hazard_statements": [
+        "H302",
+        "H318"
+      ],
+      "storage_group": "oxidizer",
+      "zone": "oxidizers",
+      "note": "Trick item: at 30 % the label has no GHS03 flame-over-circle, but it is still stored as an oxidizer (Prudent Practices).",
+      "catalog_no": "BR-1010"
+    },
+    {
+      "id": "sodium_chloride",
+      "name": "Sodium Chloride",
+      "formula": "NaCl",
+      "grade": "≥ 99 %, ACS reagent",
+      "cas": "7647-14-5",
+      "size": "500 g",
+      "container": "white HDPE jar, wide mouth",
+      "signal_word": null,
+      "pictograms": [],
+      "hazard_statements": [],
+      "storage_group": "non_hazardous",
+      "zone": "general_shelf",
+      "catalog_no": "BR-1011"
+    },
+    {
+      "id": "sodium_azide",
+      "name": "Sodium Azide",
+      "formula": "NaN₃",
+      "grade": "≥ 99.5 %, reagent grade",
+      "cas": "26628-22-8",
+      "size": "100 g",
+      "container": "amber glass, PP cap",
+      "signal_word": "Danger",
+      "pictograms": [
+        "GHS06",
+        "GHS08",
+        "GHS09"
+      ],
+      "hazard_statements": [
+        "H300+H310",
+        "H373",
+        "H410",
+        "EUH032"
+      ],
+      "storage_group": "toxic",
+      "zone": "toxics",
+      "note": "Keep away from acids (releases toxic HN₃ gas) and metals (forms explosive azides).",
+      "catalog_no": "BR-1012"
+    }
+  ],
+  "hazard_statement_text": {
+    "H225": "Highly flammable liquid and vapour.",
+    "H226": "Flammable liquid and vapour.",
+    "H272": "May intensify fire; oxidiser.",
+    "H290": "May be corrosive to metals.",
+    "H300+H310": "Fatal if swallowed or in contact with skin.",
+    "H301+H311+H331": "Toxic if swallowed, in contact with skin or if inhaled.",
+    "H302": "Harmful if swallowed.",
+    "H314": "Causes severe skin burns and eye damage.",
+    "H318": "Causes serious eye damage.",
+    "H319": "Causes serious eye irritation.",
+    "H331": "Toxic if inhaled.",
+    "H335": "May cause respiratory irritation.",
+    "H336": "May cause drowsiness or dizziness.",
+    "H370": "Causes damage to organs.",
+    "H373": "May cause damage to organs through prolonged or repeated exposure.",
+    "H410": "Very toxic to aquatic life with long lasting effects.",
+    "EUH032": "Contact with acids liberates very toxic gas."
+  }
+}

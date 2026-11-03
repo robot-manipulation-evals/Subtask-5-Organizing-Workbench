@@ -1,0 +1,82 @@
+#usda 1.0
+(
+    subLayers = [
+        @task5_scene.usda@
+    ]
+)
+
+over "World"
+{
+    over "BenchItems"
+    {
+        over "Bottle_01"
+        {
+            float3 xformOp:rotateXYZ = (0, 0, 180)
+            double3 xformOp:translate = (1.923, -0.175, 0.043)
+        }
+
+        over "Bottle_02"
+        {
+            double3 xformOp:translate = (-0.132, -2, 0.879)
+        }
+
+        over "Bottle_03"
+        {
+            float3 xformOp:rotateXYZ = (0, 0, 180)
+            double3 xformOp:translate = (1.923, -0.9855, 0.043)
+        }
+
+        over "Bottle_07"
+        {
+            float3 xformOp:rotateXYZ = (0, 0, 180)
+            double3 xformOp:translate = (1.923, -0.8805, 0.043)
+        }
+
+        over "Bottle_08"
+        {
+            float3 xformOp:rotateXYZ = (0, 0, 180)
+            double3 xformOp:translate = (1.923, -0.7755, 0.043)
+        }
+
+        over "Bottle_12"
+        {
+            float3 xformOp:rotateXYZ = (0, 0, 180)
+            double3 xformOp:translate = (1.923, -0.6705, 0.043)
+        }
+
+        over "Bottle_04"
+        {
+            float3 xformOp:rotateXYZ = (0, 0, 180)
+            double3 xformOp:translate = (1.923, 0.7755, 0.043)
+        }
+
+        over "Bottle_09"
+        {
+            float3 xformOp:rotateXYZ = (0, 0, 180)
+            double3 xformOp:translate = (1.923, 0.8805, 0.043)
+        }
+
+        over "Bottle_05"
+        {
+            double3 xformOp:translate = (-0.132, -1.2, 0.879)
+        }
+
+        over "Bottle_06"
+        {
+            float3 xformOp:rotateXYZ = (0, 0, 180)
+            double3 xformOp:translate = (1.923, 0.1225, 0.043)
+        }
+
+        over "Bottle_10"
+        {
+            float3 xformOp:rotateXYZ = (0, 0, 180)
+            double3 xformOp:translate = (1.923, 0.2275, 0.043)
+        }
+
+        over "Bottle_11"
+        {
+            double3 xformOp:translate = (-0.132, -1.6, 0.879)
+        }
+    }
+}
+
