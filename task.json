@@ -1,0 +1,19 @@
+{
+  "title": "Store reagent bottles by hazard class",
+  "category": "Impact on jobs",
+  "keywords": [
+    "laboratory",
+    "chemical storage",
+    "label reading",
+    "hazard segregation",
+    "bimanual"
+  ],
+  "instruction": "Read the label on each bottle before you grasp it, then put each bottle in the storage tray where it belongs.",
+  "context": "Lab technicians and stockroom staff put away reagents by hazard class every day; storing an oxidizer with flammables, or an acid with bases, causes fires and toxic gas. Two bottles are the classic mistakes: glacial acetic acid is stored with the flammables, not the acids, and 30 % hydrogen peroxide with the oxidizers.",
+  "setup": "An oak-coloured table with the two arms at its near edge (bases 61 cm apart). A row of six fixed dark grey plastic storage trays (11.5 cm square outside, 3 cm walls 5 mm thick, 4 mm floor) stands 38 cm in front of the arm bases, their centres at 31, 19 and 7 cm left and 7, 19 and 31 cm right of the midline. Each has a printed sign card (11.5 x 5.75 cm, 4 mm thick) standing on its back wall, facing the arms, with one large GHS pictogram and a word; left to right: INORGANIC ACIDS (blue, GHS05), FLAMMABLE (yellow, GHS02), TOXIC (white, GHS06), OXIDIZERS (white, GHS03), BASES (blue, GHS05), GENERAL (grey, no pictogram). Four clear glass 100 mL Boston round bottles with caps (5 cm across, 10.3 cm tall), loose, stand upright 22 cm in front of the arm bases. Each carries a paper label wrapped all the way round (6.7 cm tall) with the chemical's name, its GHS pictograms and the signal word DANGER, printed twice so a full label faces any direction. Left to right: glacial acetic acid (GHS02, GHS05; 165 g) 27 cm left of the midline, hydrochloric acid 37 % (GHS05, GHS07; 178 g) 10 cm left, ammonium hydroxide 28 % (GHS05, GHS07, GHS09; 150 g) 10 cm right, hydrogen peroxide 30 % (GHS05, GHS07; 171 g) 27 cm right. Correct trays: acetic acid -> FLAMMABLE, hydrochloric acid -> INORGANIC ACIDS, ammonium hydroxide -> BASES, hydrogen peroxide -> OXIDIZERS; no bottle belongs in TOXIC or GENERAL. Each arm reaches only the three trays on its own side, and each bottle's correct tray is on its side; the nearest tray is wrong for every bottle.",
+  "scoring": "A bottle counts when, at the end, it stands upright (tilted at most 20 degrees) inside its correct tray: its centre within 3.75 cm of the tray's centre along both table axes and its bottom within 1.5 cm of the tray floor (not resting on a rim). 0.25 per bottle that counts. Any bottle tilted more than 20 degrees anywhere (a spill) scores the trial 0. All four counted and still (under 1 cm/s) for 1 s: 1.0.",
+  "run_limit": "2,400 steps (2 minutes at 20 Hz)",
+  "reset_notes": "Stand the four bottles back upright 22 cm in front of the arm bases, with nothing in the trays: acetic acid 27 cm and hydrochloric acid 10 cm left of the midline, ammonium hydroxide 10 cm and hydrogen peroxide 27 cm right of it.",
+  "fidelity": "Bottles are rigid bodies with their filled mass; the liquid is not simulated, so sloshing and spills are judged only by tilt. They are 100 mL bottles, not the 500 mL size most common in stockrooms, so they fit the 94 mm gripper. All four are clear glass in the simulation; real ammonium hydroxide and hydrogen peroxide often come in HDPE. Labels show only the name, pictograms and signal word (no H-statements, small print or barcode) so they can be read at the cameras' resolution. Trays are fixed to the table. Every object has the same rubber-like friction (1.2 static, 1.0 dynamic).",
+  "scores": "Dream-1 run: 0.0; demo: 1.0"
+}
