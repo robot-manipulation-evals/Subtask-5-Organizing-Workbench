@@ -1,5 +1,5 @@
 # Store reagent bottles by hazard class
-
+![Setup](setup.png)
 Four labelled reagent bottles stand on the bench in front of a row of six storage trays: INORGANIC ACIDS, FLAMMABLE,
 TOXIC, OXIDIZERS, BASES and GENERAL. The robot has to read each bottle's label and put it in the tray where it
 belongs. Two bottles are the classic storage mistakes: glacial acetic acid is an acid but is stored with the
